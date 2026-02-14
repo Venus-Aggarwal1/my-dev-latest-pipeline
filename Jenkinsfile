@@ -18,12 +18,12 @@ pipeline {
             }
         }
 
-        //stage('Run Unit Tests') {
-          //  steps {
+        stage('Run Unit Tests') {
+            steps {
                 // Execute the test script defined in package.json
-            //    sh 'npm test'
-            //}
-    //}
+                sh 'npm test'
+            }
+    }
 
     post {
         always {
