@@ -17,13 +17,13 @@ pipeline {
                 sh 'npm install'
             }
         }
-    }
-
+        
         stage('Run Unit Tests') {
             steps {
                 // Execute the test script defined in package.json
                 sh 'npm test'
             }
+    }
     }
 
     post {
