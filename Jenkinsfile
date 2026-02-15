@@ -24,7 +24,7 @@ pipeline {
                 sh 'npm test'
             }
     }
-    }
+}
 
     post {
         always {
