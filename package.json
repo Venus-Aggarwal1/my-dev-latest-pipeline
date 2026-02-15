@@ -20,5 +20,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest"
+  },
+  "dependencies": {
+    "math.js": "^1.1.46"
   }
 }
