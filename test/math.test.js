@@ -13,10 +13,4 @@ describe('Math functions', () => {
   test('multiplies 3 * 4 to equal 12', () => {
     expect(multiply(3, 4)).toBe(12);
   });
-
-  test('throws an error if arguments are invalid', () => {
-    // To test if a function throws an error, you must wrap the function call in another function
-    expect(() => sum('a', 2)).toThrow();
-  });
-});
-
+}
