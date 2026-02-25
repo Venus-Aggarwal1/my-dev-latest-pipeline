@@ -36,7 +36,7 @@ pipeline {
                     sshagent(['ec2-ssh-key']) { // Use the ID from Jenkins Credentials
                         //sh "ssh -o StrictHostKeyChecking=no ${remoteUser}@${remoteHost} 'mkdir -p ${remoteDir}'"
                         //sh "scp -o StrictHostKeyChecking=no -r * ${remoteUser}@${remoteHost}:${remoteDir}"
-                        sh "ssh -o StrictHostKeyChecking=no ${remoteUser}@${remoteHost} 'cd ${remoteDir} && npm install --production && pm2 restart app.js || pm2 start app.js'"
+                        sh 'cd ${remoteDir} && npm install --production && pm2 restart app.js || pm2 start app.js'
                     }
                 }
             }
