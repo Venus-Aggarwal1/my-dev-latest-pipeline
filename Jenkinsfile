@@ -28,7 +28,7 @@ pipeline {
             steps {
                 // Use the 'Publish Over SSH' plugin via a script step or configure in job UI
                 script {
-                    def remoteDir = '/home/ubuntu/.nvm/versions/node/v24.14.0/bin' // Target directory on EC2
+                    def remoteDir = '/home/ubuntu' // Target directory on EC2
                     def remoteUser = 'ubuntu' // Your EC2 username
                     def remoteHost = '3.16.38.194' // Your EC2 public IP or DNS
 
